@@ -16,5 +16,12 @@ namespace FileCrawler
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            forms.DirectoryContent dirForm = new forms.DirectoryContent();
+            dirForm.MdiParent = this;
+            dirForm.Show();
+        }
     }
 }
