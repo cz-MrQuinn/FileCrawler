@@ -11,7 +11,15 @@ namespace FileCrawler.viewmodels
         public int id { get; set; }
         public string DirName { get; set; }
         public string FileName { get; set; }
+
+        public long FileSize { get; set; }
+
+        public DateTime FileCreated { get; set; }
+        public DateTime FileLastAccess { get; set; }
+        public DateTime FileLastWrite { get; set; }
+
         public string FileHash { get; set; }
 
     }
 }
+

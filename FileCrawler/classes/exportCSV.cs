@@ -62,9 +62,9 @@ namespace FileCrawler.classes
 
 
         //export to a file.
-        public void ExportToFile(string path)
+        public void ExportToFile(string path, bool includeHeader)
         {
-            File.WriteAllText(path, Export());
+            File.WriteAllText(path, Export(includeHeader));
         }
 
         // export to html

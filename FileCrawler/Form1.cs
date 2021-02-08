@@ -23,5 +23,12 @@ namespace FileCrawler
             dirForm.MdiParent = this;
             dirForm.Show();
         }
+
+        private void mnuFile_SearchDirs_Click(object sender, EventArgs e)
+        {
+            forms.DirectoryContent dirForm = new forms.DirectoryContent();
+            dirForm.MdiParent = this;
+            dirForm.Show();
+        }
     }
 }
